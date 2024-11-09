@@ -1,0 +1,325 @@
+
+@font-face {
+	font-family: NameFont; /* Название вашего шрифта */
+	src: url('fonts/Tornadomediumc.otf'); /* Относительный путь к вашему шрифту */
+}
+
+body {
+	font-family: 'NameFont', sans-serif;
+	/*font-family: Arial, sans-serif;*/ /*Стандартный шрифт*/
+	width: 100vw; /* Ширина равна 100% ширины экрана */
+	height: 100vh; /* Высота равна 100% высоты экрана */
+	position: relative;
+	margin: 0; /* Убираем отступы, чтобы документ заполнил экран полностью */
+	padding: 0; 
+	background-color: rgba(190, 200, 165, 1.0);
+}
+
+.all_bg{
+	background-color: rgba(160, 185, 192, 1.0);
+	overflow: hidden;
+}
+
+header {
+	text-align: center;
+	display: flex; /* Расположить элементы в строку */
+	align-items: center; /* Выравнивание элементов по вертикали */
+	justify-content: center;
+}
+
+.head_bg{
+	background-color: rgba(187, 218, 191, 0.6);
+	border-radius: 20px; 
+	width: 360px;
+	height: 270px;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top:10px;
+}
+
+
+.photo_and_name_container {
+	display: flex; /* Расположить элементы в строку */
+	align-items: center; /* Выравнивание элементов по вертикали */
+	justify-content: center;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.avatar {
+	background-image: url("img/avatar.webp");
+	background-size: cover;
+	background-position: center;
+	width: 180px; /* Задайте желаемую ширину */
+	height: 200px; /* Задайте желаемую высоту */
+	border-radius: 10%; /* Сделайте аватарку круглой */
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.name {
+	margin-right: 10px;
+	color: #222d10;
+	font-size: 32px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+.dealing_section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dealing {
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #222d10;
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+.menu_section{
+	justify-content: center;
+	display: flex; /* Выравнивание кнопок по центру */
+	list-style-type: none;
+}
+
+.menu_btns_container{
+	background-color: rgba(187, 218, 191, 0.6);
+	overflow-x: auto;
+	white-space: nowrap;
+	list-style-type: none;
+	display: flex; /* Добавляем flex для кнопок в одну линию */
+	justify-content: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 340px;
+	border-radius: 10px;
+}
+
+.menu_btns_group{
+	display: inline-block;
+	padding: 10px 10px;
+	background-color: rgba(51, 83, 55, 0.7);
+	color: rgba(219, 243, 222);
+	border: none;
+	cursor: pointer;
+	border-radius: 5%;
+	font-size: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menu_btns_group:hover {
+	background-color: rgba(20, 136, 34);
+}
+
+.about_me_section{
+}
+
+.about_me_bg{
+	background-color: rgba(224, 206, 169, 0.8);
+	border-radius: 10px; 
+	width: 95%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
+}
+
+.about_me_container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.about_me_head{
+	padding-top: 20px;
+	color: #361f4a;
+	font-size: 32px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+.about_me_text{
+	color: #361f4a;
+	font-size: 22px;
+	text-align: left;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-bottom: 20px;
+}
+
+.portfolio_section{
+	margin-bottom: 20px;
+}
+
+.portfolio_bg{
+	background-image: url("img/later.webp");
+	background-size: cover; /* Адаптирует изображение к размерам элемента */
+	overflow: hidden;
+	background-position: center; /* Выравнивает изображение по центру */
+	border-radius: 5px;
+	width: 95%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
+}
+
+.portfolio_container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.portfolio_head{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 20px;
+	color: #000;
+	font-size: 32px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+.portfolio_text{
+	color: #000;
+	font-size: 22px;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-bottom: 20px;
+}
+
+.contact_section{
+	display: flex; /* Расположить элементы в строку */
+	align-items: center; /* Выравнивание элементов по вертикали */
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact_bg{
+	background-image: url("img/contacts_bg.webp");
+	background-size: cover; /* Адаптирует изображение к размерам элемента */
+	overflow: hidden;
+	background-position: center; /* Выравнивает изображение по центру */
+	border-radius: 10px; 
+	width: 700px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+
+.contact_container{
+	background-color: rgba(245, 245, 245, 0.2);
+	padding-top: 5px;
+	width: 350px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.contact_head{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	color: #000;
+	font-size: 32px;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+.contact_btns_container{
+	display: flex;
+	justify-content: center;
+}
+
+.contact_btns{
+	width: 50px; /* Установите ширину и высоту изображений в соответствии с вашими требованиями */
+	height: 50px;
+	margin: 20px 5px;
+}
+
+footer {
+	display: flex; /* Расположить элементы в строку */
+	align-items: top; /* Выравнивание элементов по вертикали */
+	justify-content: left;
+	height: 110px;
+}
+
+.footer_text{
+	margin-left: 1%;
+	margin-bottom: 1%;
+	display: block;
+	color: #000;
+	align-self: flex-end;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.scroll_up_btn{
+	display: none;
+	position: fixed;
+	bottom:1%;
+	right: 90px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	border-radius: 10%;
+	font-size: 20px;
+	width: 60px;
+	height: 40px;
+	opacity: 0.5;
+}
+
+.scroll_up_btn:hover {
+	background-color: #555;
+}
+
+.scroll_down_btn{
+	display: block;
+	position: fixed;
+	bottom:1%;
+	right: 20px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	border-radius: 10%;
+	font-size: 20px;
+	width: 60px;
+	height: 40px;
+	opacity: 0.5;
+}
+
+.scroll_down_btn:hover {
+	background-color: #555;
+}
